@@ -6,7 +6,23 @@
       <div class="menu"></div>
     </div>
     <div class="content">
-      <aside>sideBar</aside>
+      <aside>
+        <h2>Component List</h2>
+        <ol>
+          <li>
+            <router-link to="/doc/switch">Switch</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/button">Button</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/dialog">Dialog</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/tabs">Tabs</router-link>
+          </li>
+        </ol>
+      </aside>
       <main>main</main>
 
     </div>

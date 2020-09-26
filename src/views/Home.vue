@@ -5,8 +5,8 @@
       <h1>Drwing UI framework</h1>
       <h2>A very Lihai UI framework</h2>
       <p class="actions">
-        <a href="">Github</a>
-        <a href="">Begin</a>
+        <a href="https://github.com/RickyLei7/Drwing-UI">Github</a>
+        <router-link to="/doc">Begin</router-link>
       </p>
     </div>
   </div>
