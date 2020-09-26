@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Topnav />
+    <Topnav/>
     <div class="banner">
       <h1>Drwing UI framework</h1>
       <h2>A very Lihai UI framework</h2>
@@ -13,15 +13,35 @@
 </template>
 
 <script lang="ts">
-  import Topnav from '../components/Topnav.vue'
+  import Topnav from '../components/Topnav.vue';
 
   export default {
-    components:{Topnav}
-  }
+    components: {Topnav}
+  };
 </script>
 
 
 <style lang="scss" scoped>
-
+  .banner {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: lightgreen;
+    > .actions {
+      padding: 24px 0;
+      a {
+        margin:0 16px;
+        background: #fff;
+        display: inline-block;
+        $h: 28px;
+        height: $h;
+        line-height: $h;
+        border-radius: $h/2;
+        padding: 0 16px;
+      }
+    }
+  }
 
 </style>
