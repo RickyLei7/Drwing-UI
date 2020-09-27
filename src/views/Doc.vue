@@ -2,11 +2,11 @@
   <div>
     <Topnav/>
     <div class="topNav">
-      <div class="logo"></div>
+      <div class="logo" @click="toggleMenu"></div>
       <div class="menu"></div>
     </div>
     <div class="content">
-      <aside>
+      <aside v-if="asideVisible">
         <h2>Component List</h2>
         <ol>
           <li>
@@ -32,20 +32,26 @@
 
 <script lang="ts">
   import Topnav from '../components/Topnav.vue';
+  import {inject, Ref} from 'vue';
 
   export default {
-    components: {Topnav}
+    components: {Topnav},
+    setup() {
+      const asideVisible = inject<Ref<boolean>>('xxx');
+      console.log(asideVisible.value)
+      return{asideVisible}
+    }
   };
 </script>
 
 <style lang="scss" scoped>
   aside {
     background: lightblue;
-    width: 150px;
-    padding: 16px;
+    width: 300px;
     position: fixed;
     top: 0;
     left: 0;
+    padding: 100px 16px 16px;
     > h2 {
       margin-bottom: 4px;
     }
