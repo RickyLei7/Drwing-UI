@@ -1,11 +1,11 @@
 <template>
   <div class="topNav">
-    <div class="logo" @click="toggleMenu"><img src="../imgs/LOGO.png" alt="LOGO"></div>
+    <div class="logo"><img src="../imgs/LOGO.png" alt="LOGO"></div>
     <ul class="menu">
       <li>menu1</li>
       <li>menu2</li>
     </ul>
-    <span class="toggleAside"></span>
+    <span class="toggleAside" @click="toggleMenu"></span>
   </div>
 </template>
 
@@ -54,7 +54,6 @@
     }
     > .toggleAside{
       border: 10px solid red;
-      display: inline-block;
       width: 24px;
       height: 24px;
       background: red;
@@ -62,11 +61,13 @@
       left: 16px;
       top: 50%;
       transform: translateY(-50%);
+      display: none;
 
     }
     @media (max-width: 500px) {
       > .menu {display: none;}
       > .logo {margin: 0 auto;}
+      > .toggleAside{display: inline-block;}
     }
   }
 </style>
