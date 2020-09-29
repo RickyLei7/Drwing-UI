@@ -27,12 +27,14 @@
 
 <style lang="scss" scoped>
   .topNav {
-    border: 1px solid red;
     background: pink;
     display: flex;
     padding: 16px;
-    position: relative;
+    position: fixed;
     z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
     justify-content: center;
     align-items: center;
     > .logo {
