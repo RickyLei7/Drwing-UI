@@ -1,6 +1,6 @@
 <template>
   <div>
-    Switch doc
+   Dialog Demo
 
   </div>
 </template>

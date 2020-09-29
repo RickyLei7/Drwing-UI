@@ -1,6 +1,5 @@
 <template>
   <div>
-    Switch doc
-
+   Tabs Demo
   </div>
 </template>
